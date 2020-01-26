@@ -1,6 +1,7 @@
 // Inclusão da biblioteca 'stdio' para poder utilizar as funções 'printf' e 'scanf'
 #include <stdio.h> 
 
+// Ínicio da função principal 'main'.
 int main(){
 	// cases = quantidade de casos a serem testados; shots = quantidade de tiros disprados; hitted = aramazenará quantas vezes KiloMan foi atingido; array_shots = armazenará a altura dos tiros;
 	int cases, shots, i, j, hitted = 0, array_shots[51]; 
