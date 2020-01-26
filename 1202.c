@@ -57,3 +57,6 @@ int Bin_To_Dec(char string[]){
 	// Retorno decimal.
 	return decimal;
 }
+
+/* Para este problema, além da utilização de bibliotecas (padrão na maioria dos projetos na linguagem C), utilizei os conceitos de variáveis, vetores, laços de repetição, e estruturas condicionais,
+além da implementação de funções, e, recursividade.*/
