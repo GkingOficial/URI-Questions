@@ -51,3 +51,6 @@ int main(){
 		hitted = 0;
 	}
 }
+
+
+/* Para este problema, além da utilização de bibliotecas (padrão na maioria dos projetos na linguagem C), utilizei os conceitos de variáveis, vetores, laços de repetição, e estruturas condicionais. */
