@@ -1,8 +1,22 @@
+/*
+Entrada
+A entrada possui várias linhas. Em cada linha há o nome de uma criança boa. Nenhum elfo escreveu os nomes com acentos. O maior nome tem no máximo 80 caracteres. Não
+existem mais de 1000 crianças na lista. Todos os nomes são distintos. A lista de nomes termina com EOF.
+
+Saída
+A saída é dada em uma linha. O nome da criança que fica na última posição da lista deve ser mostrado. Mostre o nome exatamente como foi lido na entrada. Use a ordem
+alfabética dos nomes para ordenar, mas considere maiúsculas e minúsculas como iguais.
+*/
+
+
+/* Para este problema, além da utilização de bibliotecas (padrão na maioria dos projetos na linguagem C), utilizei os conceitos de variáveis, vetores, laços de
+repetição, e estruturas condicionais, funções, estrutura heterogênea de dados, e, uma função para ordenar um vetor em ordem alfabética.*/
+
 // Inclusão das bibliotecas'stdio' e 'string'.
 #include <stdio.h>
 #include <string.h>
 
-// Definição de um tipo 'list' (linha 9), sendo este um 'struct' (estrutura de dados heterogêneas).
+// Definição de um tipo 'list' (linha 23), sendo este um 'struct' (estrutura de dados heterogêneas).
 typedef struct{
 	// name = armazenará os nomes das crianças.
 	char name[81];
@@ -60,6 +74,3 @@ void Order(list *kids, int amount){
 		i++;
 	}
 }
-
-/* Para este problema, além da utilização de bibliotecas (padrão na maioria dos projetos na linguagem C), utilizei os conceitos de variáveis, vetores, laços de repetição, e estruturas condicionais,
-funções, estrutura heterogênea de dados, e, uma função para ordenar um vetor em ordem alfabética.*/
