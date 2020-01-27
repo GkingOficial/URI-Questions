@@ -28,7 +28,8 @@ void Order(kids arr[], int size);
 
 // Ínicio da função principal 'main'.
 int main(){
-	// i = contador; good_behavior = número de crianças que tiveram um bom comportamento; bad_behavior = número de crianças que tiveram um mau comportamento; amount = número de crianças; aux = auxiliar;
+	/* i = contador; good_behavior = número de crianças que tiveram um bom comportamento; bad_behavior = número de crianças que tiveram um mau comportamento;
+	amount = número de crianças; aux = auxiliar;*/
 	int i = 0, good_behavior = 0, bad_behavior = 0, amount, aux;
 	// behavior = comportamento da criança;
 	char behavior;
@@ -88,7 +89,8 @@ void Order(kids arr[], int size){
 		// j recebe o índice do elemento de 'kids', anterior ao elemento na posição 'i'.
 		j = i - 1;
 		
-		// Laço de repetição, varrerá 'arr' (list), comparando os nomes por meio da função 'strcasecmp' que desconsidera a diferença entre as letras maiúsculas e minúsculas.
+		/* Laço de repetição, varrerá 'arr' (list), comparando os nomes por meio da função 'strcasecmp' que desconsidera a diferença entre as letras maiúsculas e
+		minúsculas.*/
 		while (strcmp(arr[j].name, aux.name) > 0 && j >= 0){
 			// Pego o elemento de 'arr' (list) na posição j + 1, e igua-lo ao elemento na posição j.
 			arr[j + 1] = arr[j];
