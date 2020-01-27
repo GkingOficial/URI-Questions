@@ -1,8 +1,23 @@
+/*
+Entrada
+A entrada é composta por vários nomes. O primeiro valor N (0 = N = 100), indica quantos nomes tem na lista. As N linhas seguintes, contem um caracter especial
+correspondente ao comportamento da criança (+ indica que a criança foi bem comportada, - indica que a criança não foi bem comportada). Após o caracter especial,
+segue o nome da criança com no máximo 20 caracteres.
+
+Saída
+Para cada lista de crianças, você deve imprimir os nomes em ordem alfabética. Após imprimir os nomes das crianças, você deve mostrar o total de crianças que se
+comportaram bem ou mal durante o ano.
+*/
+
+
+/* Para este problema, além da utilização de bibliotecas (padrão na maioria dos projetos na linguagem C), utilizei os conceitos de variáveis, vetores, laços de
+repetição, e estruturas condicionais, funções, estrutura heterogênea de dados, e, uma função para ordenar um vetor em ordem alfabética.*/
+
 // Inclusão das bibliotecas'stdio' e 'string'.
 #include <stdio.h>
 #include <string.h>
 
-// Definição de um tipo 'kids' (linha 9), sendo este um 'struct' (estrutura heterogênea de dados).
+// Definição de um tipo 'kids' (linha 24), sendo este um 'struct' (estrutura heterogênea de dados).
 typedef struct{
 	// name = armazenará os nomes das crianças.
 	char name[21];
@@ -21,7 +36,7 @@ int main(){
 	// Leitura de 'amount';
 	scanf("%d", &amount);
 	
-	// aux recebe o número de crianças, lido anteriormente (linha 23);
+	// aux recebe o número de crianças, lido anteriormente (linha 37);
 	aux = amount;
 	// list = vetor de 'kids' (kids --> list --> struc), com tamanho igual ao número de crianças;
 	kids list[amount];
@@ -31,12 +46,12 @@ int main(){
 		// Leitura de 'behavior' (caracter representando o comportamento da criança), e o nome da criança.
 		scanf(" %c %s", &behavior, list[i].name);
 		
-		// Se o caracter lido foi '+', entaõ...
+		// Se o caracter lido foi '+', então...
 		if (behavior == '+'){
 			// Incremento 'good_behavior'.
 			good_behavior++;
 			
-		// Caso o caracter lido não fio '+', logo, só poderá ter sido '-', entaõ...
+		// Caso o caracter lido não foi '+', logo, só poderá ter sido '-', então...
 		} else{
 			// Incremento 'bad_behavior'.
 			bad_behavior++;
@@ -86,6 +101,3 @@ void Order(kids arr[], int size){
 		i++;
 	}
 }
-
-/* Para este problema, além da utilização de bibliotecas (padrão na maioria dos projetos na linguagem C), utilizei os conceitos de variáveis, vetores, laços de repetição, e estruturas condicionais,
-funções, estrutura heterogênea de dados, e, uma função para ordenar um vetor em ordem alfabética.*/
